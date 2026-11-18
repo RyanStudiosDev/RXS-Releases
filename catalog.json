@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "releases": [
+    {
+      "manifest": "rxs-engine-1.0.0/release.json"
+    }
+  ]
+}

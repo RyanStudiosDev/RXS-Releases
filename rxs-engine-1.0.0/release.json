@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "id": "rxs-engine-1.0.0",
+  "product": "RXS Engine",
+  "version": "1.0.0",
+  "channel": "official",
+  "title": "RXS Engine V1.0.0",
+  "summary": "",
+  "publishedAt": "2026-11-18T04:31:36Z",
+  "card": {
+    "color": "#2f6fe4",
+    "label": "V 1.0.0"
+  },
+  "package": {
+    "url": "package.zip",
+    "sizeBytes": 70802083,
+    "sha256": "0dded9fc7e16d05b4cd36d28dd8b36fe5f5f8d25a79f11c667e2e53d9df12bb6",
+    "executable": "RXSEditor.exe"
+  },
+  "requirements": {
+    "os": "Windows 10 64-bit or newer"
+  },
+  "notes": {},
+  "components": [
+    {
+      "id": "editor",
+      "name": "Editor",
+      "description": "The RXS Editor and everything it needs to run.",
+      "required": true,
+      "default": true,
+      "files": [
+        "RXSEditor.exe"
+      ],
+      "sizeBytes": 136850080
+    },
+    {
+      "id": "resources",
+      "name": "Resources",
+      "description": "Shaders, built-in assets and default scenes.",
+      "required": true,
+      "default": true,
+      "files": [
+        "Resources/**"
+      ],
+      "sizeBytes": 1081
+    },
+    {
+      "id": "player",
+      "name": "Player",
+      "description": "Run and test games outside the editor.",
+      "required": false,
+      "default": true,
+      "files": [
+        "RXSPlayer*"
+      ],
+      "sizeBytes": 1047552
+    },
+    {
+      "id": "tools",
+      "name": "Export and migration tools",
+      "description": "Command-line export and project upgrade tools.",
+      "required": false,
+      "default": true,
+      "files": [
+        "rxs_export_game*",
+        "rxs_project_migrate*"
+      ],
+      "sizeBytes": 68608
+    },
+    {
+      "id": "samples",
+      "name": "Sample projects",
+      "description": "Example projects to learn from.",
+      "required": false,
+      "default": false,
+      "files": [
+        "Samples/**"
+      ],
+      "sizeBytes": 0
+    },
+    {
+      "id": "docs",
+      "name": "Documentation",
+      "description": "Offline documentation.",
+      "required": false,
+      "default": false,
+      "files": [
+        "docs/**"
+      ],
+      "sizeBytes": 0
+    }
+  ]
+}
